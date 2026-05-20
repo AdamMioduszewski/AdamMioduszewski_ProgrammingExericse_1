@@ -24,21 +24,29 @@ def buy_tickets(remaining):
     return remaining, False
 
 
-# Main program
-remaining_tickets = TOTAL_TICKETS
-buyer_count = 0   # accumulator
+# Main function
+def main():
 
-# Loop until all tickets are sold
-while remaining_tickets > 0:
-    display_remaining_tickets(remaining_tickets)
+    remaining_tickets = TOTAL_TICKETS
+    buyer_count = 0   # accumulator
 
-    remaining_tickets, success = buy_tickets(remaining_tickets)
+    # Loop until all tickets are sold
+    while remaining_tickets > 0:
 
-    # Count buyers only if purchase was successful
-    if success:
-        buyer_count += 1
+        display_remaining_tickets(remaining_tickets)
 
-    print()
+        remaining_tickets, success = buy_tickets(remaining_tickets)
 
-# Output final results
-print("All tickets have been sold!")
+        # Count buyers only if purchase was successful
+        if success:
+            buyer_count += 1
+
+        print()
+
+    # Output final results
+    print("All tickets have been sold!")
+    print("Total number of buyers:", buyer_count)
+
+
+# Call the main function
+main()

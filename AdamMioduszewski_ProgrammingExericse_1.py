@@ -28,7 +28,7 @@ def buy_tickets(remaining):
 def main():
 
     remaining_tickets = TOTAL_TICKETS
-    buyer_count = 0   # accumulator
+    buyer_amount = 0   # accumulator
 
     # Loop until all tickets are sold
     while remaining_tickets > 0:
@@ -39,13 +39,13 @@ def main():
 
         # Count buyers only if purchase was successful
         if success:
-            buyer_count += 1
+            buyer_amount += 1
 
         print()
 
     # Output final results
     print("All tickets have been sold!")
-    print("Total number of buyers:", buyer_count)
+    print("Total number of buyers:", buyer_amount)
 
 
 # Call the main function

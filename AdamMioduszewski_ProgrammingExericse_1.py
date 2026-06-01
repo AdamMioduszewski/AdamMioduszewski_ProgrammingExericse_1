@@ -1,6 +1,6 @@
 # Cinema Ticket Pre-Sale Program
 
-TOTAL_TICKETS = 20
+TOTAL_TICKETS = 10
 
 
 # Function to display remaining tickets

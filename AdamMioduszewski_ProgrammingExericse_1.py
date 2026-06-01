@@ -10,7 +10,7 @@ def display_remaining_tickets(remaining):
 
 # Function to process ticket purchase
 def buy_tickets(remaining):
-    tickets = int(input("How many tickets would you like to buy? (1-4): "))
+    tickets = int(input("How many tickets are you buying? (1-4): "))
 
     # Check if ticket request is valid
     if tickets < 1 or tickets > 4:
